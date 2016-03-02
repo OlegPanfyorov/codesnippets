@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>lazySegmentControl</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>- (UISegmentedControl*)segmentControl
+{
+    if(!_segmentControl)
+    {
+        _segmentControl = [[UISegmentedControl alloc] initWithItems:@[@"&lt;#firstSegmentName#&gt;", @"&lt;#secondSegmentName#&gt;"]];
+        _segmentControl.tintColor = [UIColor an_colorWithHexString:@"FFFFFF"];
+        UIFont *font = [UIFont an_regularFontWithSize:16];
+        NSDictionary *attributes = [NSDictionary dictionaryWithObject:font
+                                                               forKey:NSFontAttributeName];
+        [_segmentControl setTitleTextAttributes:attributes
+                                       forState:UIControlStateNormal];
+        
+        [_segmentControl addTarget:self
+                            action:@selector(segmentSelected:)
+                  forControlEvents:UIControlEventValueChanged];
+        [self.contentView addSubview:_segmentControl];
+        
+        [_segmentControl mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.left.right.equalTo(self.contentView);
+            make.centerY.equalTo(self.contentView);
+            make.height.equalTo(@36);
+        }];
+    }
+    return _segmentControl;
+}
+
+- (void)segmentSelected:(UISegmentedControl*)sender
+{
+    
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>B33327C3-FB59-43A4-A369-F1D3565410FE</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>SegmentControl lazy load</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

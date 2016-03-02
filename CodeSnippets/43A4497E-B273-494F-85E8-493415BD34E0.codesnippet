@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>overr</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>NSString * reason = [NSString stringWithFormat:@"%@ should implement %@ method\n",
+                         NSStringFromClass([self class]), NSStringFromSelector(_cmd)];
+    NSException * exc =
+    [NSException exceptionWithName:@"Override exception"
+                            reason:reason
+                          userInfo:nil];
+    [exc raise];
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>43A4497E-B273-494F-85E8-493415BD34E0</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Override exeption</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

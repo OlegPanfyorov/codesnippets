@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>lazyButton</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>- (UIButton*)&lt;#buttonName#&gt;
+{
+    if (!_&lt;#buttonName#&gt;)
+    {
+        _&lt;#buttonName#&gt; = [UIButton new];
+        [_&lt;#buttonName#&gt; setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
+        _&lt;#buttonName#&gt;.titleLabel.font = [UIFont an_regularFontWithSize:16];
+        _&lt;#buttonName#&gt;.contentHorizontalAlignment = UIControlContentHorizontalAlignmentCenter;
+        [_&lt;#buttonName#&gt; setTitle:NSLocalizedString(@"&lt;#buttontitle#&gt;", nil) forState:UIControlStateNormal];
+        [self addSubview:_&lt;#buttonName#&gt;];
+        
+        [_&lt;#buttonName#&gt; mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.centerY.equalTo(self.contentView.mas_centerY);
+            make.height.width.equalTo(@44);
+        }];
+    }
+    return _&lt;#buttonName#&gt;;
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>9899C313-A066-427D-A0D4-932EB8249C43</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Button lazy load</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

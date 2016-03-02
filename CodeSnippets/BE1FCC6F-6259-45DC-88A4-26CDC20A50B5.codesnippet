@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>lazyLabel</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>- (UILabel*)&lt;#labelName#&gt;
+{
+    if (!_&lt;#labelName#&gt;)
+    {
+        _&lt;#labelName#&gt; = [UILabel new];
+        _&lt;#labelName#&gt;.textAlignment = NSTextAlignmentLeft;
+        _&lt;#labelName#&gt;.textColor = [UIColor blackColor];
+        _&lt;#labelName#&gt;.numberOfLines = 0;
+        [_&lt;#labelName#&gt; setFont:[UIFont an_regularFontWithSize:16]];
+        [self addSubview:_&lt;#labelName#&gt;];
+        
+        [_&lt;#labelName#&gt; mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.left.equalTo(self).offset(10);
+            make.right.equalTo(self).offset(-10);
+            make.top.bottom.equalTo(self);
+        }];
+    }
+    return _&lt;#labelName#&gt;;
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>BE1FCC6F-6259-45DC-88A4-26CDC20A50B5</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Label lazy load</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

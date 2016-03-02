@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>lazyView</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>- (UIView*)&lt;#viewName#&gt;
+{
+    if (!_&lt;#viewName#&gt;)
+    {
+        _&lt;#viewName#&gt; = [UIView new];
+        _&lt;#viewName#&gt;.backgroundColor = [UIColor whiteColor];
+        [self.contentView addSubview:_&lt;#viewName#&gt;];
+        
+        [_&lt;#viewName#&gt; mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.edges.equalTo(self.contentView);
+        }];
+    }
+    return _&lt;#viewName#&gt;;
+}
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>1E735237-77D2-4373-B3C6-58E660104A6B</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>View lazy load</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

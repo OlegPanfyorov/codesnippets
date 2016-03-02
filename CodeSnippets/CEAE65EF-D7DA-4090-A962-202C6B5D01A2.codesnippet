@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>enumstring</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>static NSString* &lt;#string#&gt;[] = {
+    @"",
+};
+
+NSString* &lt;#type#&gt;StringFromEnumValue(&lt;#type#&gt; type)
+{
+    int count = sizeof(&lt;#string#&gt;) / sizeof(&lt;#string#&gt;[0]);
+    return (type &lt; count) ? &lt;#string#&gt;[type] : nil;
+}
+
+&lt;#type#&gt; &lt;#type#&gt;EnumValueFromString(NSString* string)
+{
+    int count = sizeof(&lt;#string#&gt;) / sizeof(&lt;#string#&gt;[0]);
+    NSArray* array = [NSArray arrayWithObjects:&lt;#string#&gt; count:count];
+    NSInteger index = [array indexOfObject:[NSObject an_safeString:string]];
+    return (index == NSNotFound) ? 0 : index;
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>CEAE65EF-D7DA-4090-A962-202C6B5D01A2</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>EnumToString</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

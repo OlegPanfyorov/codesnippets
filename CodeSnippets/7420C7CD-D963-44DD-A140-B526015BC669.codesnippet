@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>lazytextfield</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>- (UITextField*)&lt;#textFieldName#&gt;
+{
+    if (!_&lt;#textFieldName#&gt;)
+    {
+        _&lt;#textFieldName#&gt; = [UITextField new];
+        _&lt;#textFieldName#&gt;.font = [UIFont an_regularFontWithSize:18];
+        _&lt;#textFieldName#&gt;.textColor = [&lt;#Prefix#&gt;ColorTheme shared].dusk;
+        [self.contentView addSubview:_&lt;#textFieldName#&gt;];
+        
+        [_&lt;#textFieldName#&gt; mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.edges.equalTo(self.contentView);
+        }];
+    }
+    return _&lt;#textFieldName#&gt;;
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>7420C7CD-D963-44DD-A140-B526015BC669</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>TextField lazy load</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
