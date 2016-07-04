@@ -3,21 +3,23 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>loc</string>
+	<string>assemb</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>All</string>
+		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>NSLocalizedString(@&lt;#string#&gt;, nil)</string>
+	<string>&lt;#Module#&gt;Assembly* assembly = [[&lt;#Module#&gt;Assembly new] activate];
+                &lt;#Module#&gt;Wireframe* wireframe = [assembly wireframe];
+                [wireframe presentControllerFromNavigationController:&lt;#(UINavigationController *)#&gt;];</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>D2FD7330-E61F-4373-94D9-B71B4186F243</string>
+	<string>D5EA0336-ED2B-4A57-93F3-BD5240AF7F9F</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>loc</string>
+	<string>Assembly activate</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Localize</string>
+	<string>Assembly activate</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

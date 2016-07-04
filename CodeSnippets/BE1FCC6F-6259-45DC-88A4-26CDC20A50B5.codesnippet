@@ -15,9 +15,9 @@
     {
         _&lt;#labelName#&gt; = [UILabel new];
         _&lt;#labelName#&gt;.textAlignment = NSTextAlignmentLeft;
-        _&lt;#labelName#&gt;.textColor = [UIColor blackColor];
+        _&lt;#labelName#&gt;.textColor = [&lt;#Prefix#&gt;ColorTheme shared].&lt;#color#&gt;;        
         _&lt;#labelName#&gt;.numberOfLines = 0;
-        [_&lt;#labelName#&gt; setFont:[UIFont an_regularFontWithSize:16]];
+        _&lt;#labelName#&gt;.font = [UIFont an_regularFontWithSize:16];
         [self addSubview:_&lt;#labelName#&gt;];
         
         [_&lt;#labelName#&gt; mas_makeConstraints:^(MASConstraintMaker *make) {

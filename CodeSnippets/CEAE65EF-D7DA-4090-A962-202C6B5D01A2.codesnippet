@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>enumstring</string>
+	<string>enumtostring</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>ClassImplementation</string>
@@ -30,6 +30,8 @@ NSString* &lt;#type#&gt;StringFromEnumValue(&lt;#type#&gt; type)
 	<string>CEAE65EF-D7DA-4090-A962-202C6B5D01A2</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>EnumToString</string>
 	<key>IDECodeSnippetTitle</key>
 	<string>EnumToString</string>
 	<key>IDECodeSnippetUserSnippet</key>

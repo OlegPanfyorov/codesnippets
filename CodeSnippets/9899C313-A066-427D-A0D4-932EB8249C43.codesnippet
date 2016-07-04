@@ -14,7 +14,7 @@
     if (!_&lt;#buttonName#&gt;)
     {
         _&lt;#buttonName#&gt; = [UIButton new];
-        [_&lt;#buttonName#&gt; setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
+        [_&lt;#buttonName#&gt; setTitleColor:[&lt;#Prefix#&gt;ColorTheme shared].&lt;#color#&gt; forState:UIControlStateNormal];
         _&lt;#buttonName#&gt;.titleLabel.font = [UIFont an_regularFontWithSize:16];
         _&lt;#buttonName#&gt;.contentHorizontalAlignment = UIControlContentHorizontalAlignmentCenter;
         [_&lt;#buttonName#&gt; setTitle:NSLocalizedString(@"&lt;#buttontitle#&gt;", nil) forState:UIControlStateNormal];

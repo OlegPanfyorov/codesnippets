@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>TopLevel</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>static inline CGFloat const k&lt;#functionTitle#&gt;)
+{
+    CGFloat &lt;#value#&gt;;
+    
+    if (IS_IPHONE_4)
+    {
+        &lt;#value#&gt; = 10;
+    }
+    else if (IS_IPHONE_5)
+    {
+        &lt;#value#&gt; = 10;
+    }
+    else if (IS_IPHONE_6)
+    {
+        &lt;#value#&gt; = 10;
+    }
+    else if (IS_IPHONE_6_PLUS)
+    {
+        &lt;#value#&gt; = 10;
+    }
+    else if (IS_IPAD)
+    {
+        &lt;#value#&gt; = 20;
+    }
+    return &lt;#value#&gt;;
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>185D9C89-8DAC-4D30-A44C-D5F25FEAF0EE</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C-Plus-Plus</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>My Code Snippet</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

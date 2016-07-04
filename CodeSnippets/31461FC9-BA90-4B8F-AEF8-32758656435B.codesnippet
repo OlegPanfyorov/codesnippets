@@ -3,21 +3,22 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>loc</string>
+	<string>weakify</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>All</string>
+		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>NSLocalizedString(@&lt;#string#&gt;, nil)</string>
+	<string>@weakify(self);
+@strongify(self);</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>D2FD7330-E61F-4373-94D9-B71B4186F243</string>
+	<string>31461FC9-BA90-4B8F-AEF8-32758656435B</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>loc</string>
+	<string>weakify</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Localize</string>
+	<string>weakify</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

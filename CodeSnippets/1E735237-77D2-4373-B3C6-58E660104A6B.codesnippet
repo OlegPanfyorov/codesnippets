@@ -14,7 +14,7 @@
     if (!_&lt;#viewName#&gt;)
     {
         _&lt;#viewName#&gt; = [UIView new];
-        _&lt;#viewName#&gt;.backgroundColor = [UIColor whiteColor];
+        _&lt;#viewName#&gt;.backgroundColor = [&lt;#Prefix#&gt;ColorTheme shared].&lt;#color#&gt;;        
         [self.contentView addSubview:_&lt;#viewName#&gt;];
         
         [_&lt;#viewName#&gt; mas_makeConstraints:^(MASConstraintMaker *make) {

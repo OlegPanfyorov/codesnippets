@@ -3,21 +3,24 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>loc</string>
+	<string>landscapeorientation</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>All</string>
+		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>NSLocalizedString(@&lt;#string#&gt;, nil)</string>
+	<string>if (WLIsInterfaceOrientationLandscape())
+{
+    &lt;#value#&gt;
+}</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>D2FD7330-E61F-4373-94D9-B71B4186F243</string>
+	<string>3D214E06-6F05-4485-8869-C84BA0B4F66C</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<string>Xcode.SourceCodeLanguage.Objective-C-Plus-Plus</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>loc</string>
+	<string>Interface Orientation Landscape</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Localize</string>
+	<string>Interface Orientation Landscape</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
