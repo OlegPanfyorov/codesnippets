@@ -3,22 +3,24 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>con_update</string>
+	<string>color</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>CodeBlock</string>
+		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>[&lt;#view#&gt; mas_updateConstraints:^(MASConstraintMaker *make){
-    &lt;#code#&gt;
-}];
-</string>
+	<string>- (UIColor*)&lt;#color#&gt;
+{
+    return [UIColor an_colorWithHexString:@"&lt;#value#&gt;"];
+}</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>CF088737-121D-4166-97B0-D8AB63696B08</string>
+	<string>85E3BD73-B753-4FA1-B0D5-458487751EEE</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>color</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Masonry Constraint Update</string>
+	<string>Color getter for colortheme</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
