@@ -3,29 +3,39 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>initWithFrame</string>
+	<string>fill</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>- (instancetype)initWithFrame:(CGRect)frame
+	<string>- (Class)modelClass
 {
-    self = [super initWithFrame:frame];
-    if (self) 
-	{
-        &lt;#statements#&gt;
-    }
-    return self;
+    return [&lt;#model#&gt; class];
+}
+
+- (Class)entityClass
+{
+    return [&lt;#entity#&gt; class];
+}
+
+- (id)_fillEntity:(id)entity fromModel:(id)model
+{
+    
+    return entity;
+}
+
+- (id)fillModel:(id)model fromEntity:(id)entity
+{
+    
+    return model;
 }</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>C824F3C6-0B81-41AD-85C1-0339B7B324F5</string>
+	<string>AC3F8EE3-415B-4823-B781-55C1E9B26014</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
-	<key>IDECodeSnippetSummary</key>
-	<string>Initialize a custom view subclass.</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Objective-C -initWithFrame: Method</string>
+	<string>fillMapper</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

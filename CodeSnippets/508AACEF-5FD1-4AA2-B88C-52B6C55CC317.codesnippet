@@ -3,21 +3,25 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>racc</string>
+	<string>deprecated</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>CodeExpression</string>
+		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>[[RACCommand alloc] initWithSignalBlock:^RACSignal *(id input) {
-        
-    }];</string>
+	<string>#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Wdeprecated-declarations"
+
+
+
+#pragma GCC diagnostic pop
+</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>5DC7B929-22F7-4850-80BA-2ECB41EC5F02</string>
+	<string>508AACEF-5FD1-4AA2-B88C-52B6C55CC317</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Raccomand</string>
+	<string>Deprecated</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

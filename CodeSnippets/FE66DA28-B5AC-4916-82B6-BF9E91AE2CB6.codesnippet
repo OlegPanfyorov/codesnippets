@@ -3,29 +3,28 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>initWithFrame</string>
+	<string>printfonts</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>ClassImplementation</string>
+		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>- (instancetype)initWithFrame:(CGRect)frame
-{
-    self = [super initWithFrame:frame];
-    if (self) 
-	{
-        &lt;#statements#&gt;
-    }
-    return self;
-}</string>
+	<string>    NSArray *fontFamilies = [UIFont familyNames];
+    
+    for (int i = 0; i &lt; [fontFamilies count]; i++)
+    {
+        NSString *fontFamily = [fontFamilies objectAtIndex:i];
+        NSArray *fontNames = [UIFont fontNamesForFamilyName:[fontFamilies objectAtIndex:i]];
+        NSLog (@"%@: %@", fontFamily, fontNames);
+    }</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>C824F3C6-0B81-41AD-85C1-0339B7B324F5</string>
+	<string>FE66DA28-B5AC-4916-82B6-BF9E91AE2CB6</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>Initialize a custom view subclass.</string>
+	<string>Print all available fonts</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Objective-C -initWithFrame: Method</string>
+	<string>Print fonts</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

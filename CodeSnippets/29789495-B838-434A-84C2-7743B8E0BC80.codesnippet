@@ -3,28 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>switch</string>
+	<string>itbehaveslike</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>CodeBlock</string>
+		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>switch (&lt;#expression#&gt;) {
-    case &lt;#constant#&gt;:
-        &lt;#statements#&gt;
-        break;
-        
-    default:
-        break;
-}</string>
+	<string>itBehavesLike(&lt;#name#&gt;, ^{
+    return @{ @"&lt;#key#&gt;": &lt;#object#&gt; }; 
+});</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>DA95C97A-3F49-4A24-AFF7-8ACE73B0C6FA</string>
+	<string>29789495-B838-434A-84C2-7743B8E0BC80</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.C</string>
-	<key>IDECodeSnippetSummary</key>
-	<string>Execute different sections of code when an expression has one of several constant values.</string>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Switch Statement</string>
+	<string>Specta BehavesLike</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

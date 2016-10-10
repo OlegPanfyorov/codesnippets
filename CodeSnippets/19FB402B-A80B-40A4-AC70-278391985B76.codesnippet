@@ -3,26 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>overr</string>
+	<string>descr</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>CodeBlock</string>
+		<string>TopLevel</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>NSString * reason = [NSString stringWithFormat:@"%@ should implement %@ method\n",
-                         NSStringFromClass([self class]), NSStringFromSelector(_cmd)];
-    NSException * exc =
-    [NSException exceptionWithName:@"Override exception"
-                            reason:reason
-                          userInfo:nil];
-    [exc raise];
-</string>
+	<string>describe(@"&lt;#subject#&gt;", ^{
+    
+});</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>43A4497E-B273-494F-85E8-493415BD34E0</string>
+	<string>19FB402B-A80B-40A4-AC70-278391985B76</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Override exeption</string>
+	<string>specta describe</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

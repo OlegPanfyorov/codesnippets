@@ -3,40 +3,23 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>isEqual</string>
+	<string>waituntil</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>ClassImplementation</string>
+		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>- (BOOL)isEqual:(id)other
-{
-    if (other == self) 
-	{
-        return YES;
-    } 
-	else if (![super isEqual:other]) 
-	{
-        return NO;
-    } 
-	else 
-	{
-        return &lt;#comparison expression#&gt;;
-    }
-}
+	<string>        waitUntil(^(void (^done)(void)){
 
-- (NSUInteger)hash
-{
-    return &lt;#hash expression#&gt;;
-}</string>
+            
+            done();
+        });</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>30A07915-4F35-485B-902C-F416C822B759</string>
+	<string>8395FF87-281B-49E3-8EF7-582DF7954DC3</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
-	<key>IDECodeSnippetSummary</key>
-	<string>Check equality of two objects.</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Objective-C -isEqual: and -hash Methods</string>
+	<string>Specta wait</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
